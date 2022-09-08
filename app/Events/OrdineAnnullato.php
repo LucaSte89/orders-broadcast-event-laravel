@@ -11,7 +11,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Foundation\Events\Dispatchable;
 
-class NuovoOrdine implements ShouldBroadcast
+class OrdineAnnullato implements ShouldBroadcast
 {
 
     use Dispatchable, InteractsWithSockets, SerializesModels;

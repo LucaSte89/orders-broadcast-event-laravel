@@ -11,7 +11,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Foundation\Events\Dispatchable;
 
-class NuovoOrdine implements ShouldBroadcast
+class OrdineConsegnato implements ShouldBroadcast
 {
 
     use Dispatchable, InteractsWithSockets, SerializesModels;
@@ -27,10 +27,10 @@ class NuovoOrdine implements ShouldBroadcast
     /**
      * Create a new event instance.
      *
-     * @param  int $numeroOrdine
+     * @param  int  $ordineNumero
      * @return void
      */
-    public function __construct($numeroOrdine)
+    public function __construct(int $numeroOrdine)
     {
         $this->numeroOrdine = $numeroOrdine;
     }

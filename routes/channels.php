@@ -19,7 +19,6 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
 
 
 
-Broadcast::channel('nuovo-ordine', function ($ordine) {
+Broadcast::channel('ordini', function ($ordine) {
     return true;
 });
-

@@ -40,4 +40,8 @@ Route::middleware(['auth'])->group(function () {
     })->name('dashboard');
 
     Route::post('/dashboard/add-order', [\App\Http\Controllers\DashboardController::class, 'addOrder'])->name('add-order');
+
+    Route::post('/dashboard/remove-order', [\App\Http\Controllers\DashboardController::class, 'removeOrder'])->name('remove-order');
+
+    Route::post('/dashboard/delivered-order', [\App\Http\Controllers\DashboardController::class, 'deliveredOrder'])->name('delivered-order');
 });

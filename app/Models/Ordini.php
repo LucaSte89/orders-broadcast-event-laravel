@@ -15,6 +15,7 @@ class Ordini extends Model
 
     protected $fillable = [
         'numero',
+        'stato',
         'created_at',
     ];
 }
